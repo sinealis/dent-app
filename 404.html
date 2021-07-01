@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>App for Dentists</title>
+	<link rel="icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+
+<body>
+	<div class="preload">
+		<span class="loader loader-three"></span>
+	</div>
+	<div id="app"></div>
+
+	<script>
+		window.addEventListener("load", () => {
+			const preload = document.querySelector(".preload");
+			preload.parentElement.removeChild(preload);
+		});
+	</script>
+	<script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
